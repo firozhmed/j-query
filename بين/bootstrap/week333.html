@@ -1,0 +1,433 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
+		
+		
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
+	   <script type="text/javascript" src="venobox/venobox.min.js"></script>
+	 
+	
+	<title>Fairouz </title>
+	
+
+
+</head>
+
+<body>
+
+
+
+
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark  ">
+		<!-- Brand -->
+		<a href="#">
+			<img class="navbar-brand  img-fluid"
+				src="img/kisspng-photographic-film-digital-slr-single-lens-reflex-c-5b07eb168a5c69.1530299615272455905667.png"
+				width="70px" alt="logo">
+		</a>
+
+		<!-- Toggler/collapsibe Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Navbar links -->
+		<div class=" justify-content-end collapse navbar-collapse   col-offcet" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Resume</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<div  class="row">
+<div>
+	<a class="venobox" title="Here your description" data-gall="myGallery"  href="img/1.jpg"><img src="img/1.jpg" width="200"  height="200" alt="image alt"/></a>
+	<a class="venobox" title="Here your description" data-gall="myGallery"   style="display: none;" href="img/2.jpeg"><img src="img/2.jpeg" width="200"  height="200" alt="image alt"/></a>
+	<a class="venobox" title="Here your description" data-gall="myGallery"    style="display: none;"  href="img/1.jpg"><img src="img/1.jpg"  width="200"  height="200"alt="image alt"/></a>
+	
+
+</div>
+
+<div>
+	<a class="venobox" title="Here your description...." data-gall="myGallery" href="img/3.jpg"><img src="img/3.jpg" width="200"  height="200" alt="image alt"/></a>
+	<a class="venobox" title="Here your description...."  data-gall="myGallery" href="img/3.jpeg"><img src="img/3.jpg" width="200"  height="200" alt="image alt"/></a>
+	<a class="venobox" title="Here your description...." data-gall="myGallery" href="img/3.jpg"><img src="img/3.jpg"  width="200"  height="200"alt="image alt"/></a>
+	
+
+</div>
+<div>
+	<a class="venobox" data-vbtype="video" href="https://youtu.be/d85gkOXeXG4">YouYbe</a>
+
+</div>
+
+</div>
+<script>
+
+$(document).ready(function(){
+
+
+
+/* default settings */
+
+$('.venobox').venobox({titleattr: 'data-title'}); 
+
+
+
+
+
+/* open content with custom settings */
+
+$('.venobox_custom').venobox({
+
+	framewidth: '300px',
+
+	frameheight: '250px',
+
+	border: '6px',
+
+	bordercolor: '#ba7c36',
+
+	numeratio: 'true',
+	share      : ['facebook', 'twitter', 'download'] // default: []
+
+	
+
+});
+
+
+
+/* auto-open #firstlink on page load */
+
+$("#firstlink").venobox().trigger('click');
+
+});
+
+
+</script>
+
+<!--
+
+	<p><a class="group1   cboxElement" href="img/1.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo
+			1</a></p>
+	<p><a class="group1  cboxElement" href="img/2.jpeg" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
+	<p><a class="group1    cboxElement" href="img/3.jpg" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>
+
+
+
+
+	<div id="cboxOverlay" style="display: none;"></div>
+    <div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;">
+        <div id="cboxWrapper">
+            <div>
+                <div id="cboxTopLeft" style="float: left;"></div>
+                <div id="cboxTopCenter" style="float: left;"></div>
+                <div id="cboxTopRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+                <div id="cboxMiddleLeft" style="float: left;"></div>
+                <div id="cboxContent" style="float: left;">
+                    <div id="cboxTitle" style="float: left;"></div>
+                    <div id="cboxCurrent" style="float: left;"></div><button type="button"
+                        id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button"
+                        id="cboxSlideshow"></button>
+                    <div id="cboxLoadingOverlay" style="float: left;"></div>
+                    <div id="cboxLoadingGraphic" style="float: left;"></div>
+                </div>
+                <div id="cboxMiddleRight" style="float: left;"></div>
+            </div>
+            <div style="clear: left;">
+                <div id="cboxBottomLeft" style="float: left;"></div>
+                <div id="cboxBottomCenter" style="float: left;"></div>
+                <div id="cboxBottomRight" style="float: left;"></div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div>
+    </div>
+
+
+
+
+
+
+
+
+	<main role="main" class="">
+
+		<div id="demo" class=" carousel slide  " data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/img2.jpg" alt="Los Angeles" width="100%" height="500">
+					<div class="carousel-caption   p1">
+						<h3>Fairouz Hamid</h3>
+						<p>I'm designer!</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/img1.jpg" alt="Chicago" width="100%" height="500">
+					<div class="carousel-caption  p1">
+						<h3>Fairouz Hamid</h3>
+						<p>I'm designer!</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/img3.jpg" alt="New York" width="100%" height="500">
+					<div class="carousel-caption  p1">
+						<h3>Fairouz Hamid</h3>
+						<p>I'm designer!</p>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+			 Languages 
+			<p class="pppp   mt-xs-9"> ENG&nbsp;&nbsp;&nbsp; JAP</p>
+		</div>
+
+
+
+	</main>
+</div>
+<div class="container-fluid   mb-5">
+	<!-- Social media icons
+	<div class="fixed-block block-right">
+		<ul class="list-unstyled social-icons">
+			<li><a href="#0"><i class="icon ion-logo-twitter"></i></a></li>
+			<li><a href="#0"><i class="icon ion-logo-facebook"></i></a></li>
+			<li><a href="#0"><i class="icon ion-logo-linkedin"></i></a></li>
+			<li><a href="#0"><i class="icon ion-logo-github"></i></a></li>
+			<li><a href="#0"><i class="icon ion-logo-instagram"></i></a></li>
+		</ul>
+	</div> -->
+	<!-- section
+	<section>
+		<div class="row  mt-2 mb-2">
+			<div class="col-sm-12  col-md-8   m-auto text-center ">
+				<p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quod illo
+					voluptatum
+					voluptas!
+					Excepturi reiciendis quo, possimus iste sit nam labore animi odit amet ipsum ad corrupti
+					provident harum non! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga hic
+					excepturi necessitatibus quos?</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<div class="row  m-auto w-75">
+
+		<div class="card12 col-lg-4  col-md-5  col-sm-8  position-relative  ">
+			<div class="back position-absolute   ">
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Numquam cupiditate vitae in, aspernatur laboriosam veniam velit magni quam ipsa reprehenderit,
+					neque expedita eligendi? </p>
+			</div>
+			<div class="front position-absolute  bg-light w-100"> <img class="img w-50 ml-5 mt-4  " src="img/php.png"
+					alt=""> </div>
+
+		</div>
+		<div class=" card12  col-lg-4  col-md-5  col-sm-8  position-relative   ">
+			<div class="back position-absolute     ">
+				<p class="text-center  ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Numquam cupiditate vitae in, aspernatur laboriosam veniam velit magni quam ipsa reprehenderit,
+					neque expedita eligendi? </p>
+			</div>
+			<div class="front position-absolute  bg-warning w-100"> <img class="img w-50 ml-5 mt-4  "
+					src="img/java-coffee-cup-logo.png" alt=""></div>
+
+		</div>
+		<div class="  card12 col-lg-4  col-md-5  col-sm-8 position-relative">
+			<div class="back position-absolute   ">
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Numquam cupiditate vitae in, aspernatur laboriosam veniam velit magni quam ipsa reprehenderit,
+					neque expedita eligendi? </p>
+			</div>
+			<div class="front position-absolute  bg-light w-100"><img class="img w-50 ml-5 mt-4  " src="img/c-plus.png"
+					alt=""></div>
+
+		</div>
+
+	</div>
+	<div class=" tird  row">
+		<div class=" col-lg-4  col-md-8  col-sm-12    "></div>
+		<div class=" col-lg-4  col-md-8  col-sm-12    "></div>
+		<div class=" col-lg-4  col-md-8  col-sm-12    "></div>
+	</div>
+
+	<div class="  row    m-auto  w-75">
+
+		<div class="card12 col-lg-4  col-md-5  col-sm-8  position-relative  ">
+			<div class="back position-absolute   ">
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Numquam cupiditate vitae in, aspernatur laboriosam veniam velit magni quam ipsa reprehenderit,
+					neque expedita eligendi? </p>
+			</div>
+			<div class="front position-absolute  bg-warning w-100"> <img class="img w-50 ml-5 mt-4  "
+					src="img/html-5.png" alt=""> </div>
+
+		</div>
+		<div class=" card12  col-lg-4  col-md-5  col-sm-8  position-relative   ">
+			<div class="back position-absolute     ">
+				<p class="text-center  ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Numquam cupiditate vitae in, aspernatur laboriosam veniam velit magni quam ipsa reprehenderit,
+					neque expedita eligendi? </p>
+			</div>
+			<div class="front position-absolute  bg-light w-100"> <img class="img w-50 ml-5 mt-4  " src="img/r.png"
+					alt="">
+			</div>
+
+		</div>
+		<div class="  card12 col-lg-4  col-md-5  col-sm-8 position-relative">
+			<div class="back position-absolute   ">
+				<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Numquam cupiditate vitae in, aspernatur laboriosam veniam velit magni quam ipsa reprehenderit,
+					neque expedita eligendi?</p>
+			</div>
+			<div class="front position-absolute  bg-warning w-100"><img class="img w-50 ml-5 mt-4  "
+					src="img/javascript-logo-1.png" alt=""></div>
+
+		</div>
+
+	</div>
+	<div class="tird">
+		<div class=" col-lg-4  col-md-8  col-sm-12    "></div>
+		<div class=" col-lg-4  col-md-8  col-sm-12    "></div>
+		<div class=" col-lg-4  col-md-8  col-sm-12    "></div>
+	</div>
+
+	<section>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-12  text-center  mt-5  text-secondary">
+					<p><b>Need something specific? </b> </br>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+				</div>
+				<div class="col-sm-12">
+					<center> <a name="" id="" class="btn btn-primary  mb-3" href="#" role="button">HIRE ME</a> </center>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+
+
+	<section>
+
+		<form class="  m-auto    formm">
+
+
+			<fieldset class="fieldset1">
+				<legend>
+					<h1 class="page-section-heading  text-uppercase text-secondary mb-0">CONTACT US</h1>
+				</legend>
+				<label> We'd love to hear from you, please drop us a line if you've any query.</label>
+				<div class="row">
+
+					<div class="col-lg-6">
+
+
+						<label for="uname"><b>First Name</b></label>
+						<input type="text" class="form-control" id="uname" placeholder="Enter First Name" name="uname"
+							required>
+
+
+
+					</div>
+
+					<div class="col-lg-6">
+
+
+						<label for="uname"><b>Last Name</b></label>
+						<input type="text" class="form-control" id="uname" placeholder="Enter  Last Name" name="uname"
+							required>
+
+
+					</div>
+
+				</div>
+
+				<div class="mt-3">
+					<label for="email"><b>Email Address</b></label>
+					</br>
+					<input type="email" class="form-control" placeholder="Enter email" id="email" required>
+				</div>
+
+				<div class="mt-3">
+					<label for="comment"><b>Message:</b></label>
+					<textarea class="form-control" rows="5" id="comment" required
+						data-validation-required-message="Please enter a message." aria-invalid="true"></textarea>
+				</div>
+
+
+
+				<input type="submit" class="btn btn-primary   mt-3  mb-3"
+					style="background-color: #1abc9c; border:#1abc9c ;">
+			</fieldset>
+		</form>
+
+	</section>
+
+
+</div>
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
